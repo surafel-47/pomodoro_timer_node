@@ -1,0 +1,7 @@
+{
+  "longBreakInterval": 4,
+  "shortBreakInterval": 3,
+  "focusInterval": 10,
+  "totalBreakTime": 10,
+  "totalFocusTime": 10
+}
