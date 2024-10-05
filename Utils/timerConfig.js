@@ -49,7 +49,7 @@ class TimerConfig {
     );
   }
 
-  // Helper method to validate input
+  // Helper to validate input
   static validateInterval(val) {
     const parsedValue = Number(val); // Parse the input to a number
 
@@ -59,37 +59,37 @@ class TimerConfig {
     }
   }
 
-  // Method to update the long break interval and save to file
+  //update the long break interval 
   static updateLongInterval(val) {
-    this.validateInterval(val); // Validate input
+    this.validateInterval(val); 
     this.longBreakInterval = val;
-    this.saveConfig(); // Save changes to file
+    this.saveConfig(); 
   }
 
-  // Method to update the short break interval and save to file
+  //update the short break interval 
   static updateShortInterval(val) {
     this.validateInterval(val); // Validate input
     this.shortBreakInterval = val;
-    this.saveConfig(); // Save changes to file
+    this.saveConfig(); 
   }
 
-  // Method to update the focus interval and save to file
+  //update the focus interval 
   static updateFocusInterval(val) {
     this.validateInterval(val); // Validate input
     this.focusInterval = val;
-    this.saveConfig(); // Save changes to file
+    this.saveConfig(); 
   }
 
-  // Method to increment total break time and save to file
+  // increment total break time 
   static incrementTotalBreakTime(val) {
     this.totalBreakTime += val;
-    this.saveConfig(); // Save changes to file
+    this.saveConfig(); 
   }
 
-  // Method to increment total focus time and save to file
+  //to increment total focus time
   static incrementTotalFocusTime(val) {
     this.totalFocusTime += val;
-    this.saveConfig(); // Save changes to file
+    this.saveConfig(); 
   }
 }
 

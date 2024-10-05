@@ -12,7 +12,7 @@ process.stdin.setRawMode(true);
 
 function startTimer(duration, intervalType, callback) {
   let remainingTime = duration * 60; // Convert minutes to seconds
-  let paused = false; // check if paused or nat
+  let paused = false; // check if paused or nah
   let timer; // The interval variable
 
   console.clear();
