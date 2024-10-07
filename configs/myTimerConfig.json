@@ -1,7 +1,7 @@
 {
   "longBreakInterval": 4,
-  "shortBreakInterval": 3,
-  "focusInterval": 10,
-  "totalBreakTime": 10,
-  "totalFocusTime": 10
+  "shortBreakInterval": 23,
+  "focusInterval": 40,
+  "totalBreakTime": 50,
+  "totalFocusTime": 250
 }

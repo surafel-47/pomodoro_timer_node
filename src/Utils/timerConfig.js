@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 class TimerConfig {
-  static configFilePath = path.join(__dirname,"../","configs", "myTimerConfig.json");
+  static configFilePath = path.join(__dirname,"../../","configs", "myTimerConfig.json");
   static longBreakInterval = 5; // Default values
   static shortBreakInterval = 3; // Default values
   static focusInterval = 7; // Default values

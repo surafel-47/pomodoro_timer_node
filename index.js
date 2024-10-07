@@ -1,6 +1,6 @@
-const { MainMenu } = require("./menus");
-const { TimerConfig } = require("./Utils/timerConfig");
-const Utils = require("./Utils/utils");
+const { MainMenu } = require("./src/menus");
+const { TimerConfig } = require("./src/Utils/timerConfig");
+const Utils = require("./src/Utils/utils");
 
 async function main() {
   await TimerConfig.loadConfig(); //load values from file

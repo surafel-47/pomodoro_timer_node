@@ -1,6 +1,6 @@
 const readline = require("readline");
 const { TimerConfig } = require("./Utils/timerConfig");
-const { startPomodoro} = require("./timer");
+const { startPomodoro } = require("./timerCore");
 
 const Utils = require("./Utils/utils");
 
@@ -10,7 +10,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-/*
+/**
  *
  *
  *
@@ -63,7 +63,7 @@ function handleMenuInput(choice) {
       MainMenu(); // Go Return to main menu if invalid input
   }
 }
-/*
+/**
  *
  *
  *
@@ -112,8 +112,7 @@ function handleSettingsMenuInput(choice) {
   }
 }
 
-
-/*
+/**
  *
  *
  *
@@ -143,8 +142,7 @@ function SetFocusIntervalMenu() {
   });
 }
 
-
-/*
+/**
  *
  *
  *
@@ -174,8 +172,7 @@ function SetShortIntervalMenu() {
   });
 }
 
-
-/*
+/**
  *
  *
  *
@@ -205,8 +202,7 @@ function SetLongIntervalMenu() {
   });
 }
 
-
-/*
+/**
  *
  *
  *
@@ -219,17 +215,33 @@ function SetLongIntervalMenu() {
 
 function StatsMenu() {
   console.clear();
-  console.log(`You Have spend: ${TimerConfig.totalFocusTime} Min in Total Focus.`);
-  console.log(`You Have spend: ${TimerConfig.totalBreakTime} Min in Total on Breaks.`);
+  console.log(
+    `You Have spend: ${TimerConfig.totalFocusTime} Min in Total Focus.`
+  );
+  console.log(
+    `You Have spend: ${TimerConfig.totalBreakTime} Min in Total on Breaks.`
+  );
   console.log("1. Return");
 
-  console.log("*************************************************************************");
-  console.log("*             Stats and History 📊                                     *");
-  console.log("************************************************************************");
+  console.log(
+    "*************************************************************************"
+  );
+  console.log(
+    "*             Stats and History 📊                                     *"
+  );
+  console.log(
+    "************************************************************************"
+  );
   console.log("* 1. Return 🔙");
-  console.log(`* You Have spend: ${TimerConfig.totalFocusTime} Min in Total Focus.`);
-  console.log(`* You Have spend: ${TimerConfig.totalBreakTime} Min in Total on Breaks.`);
-  console.log("*************************************************************************");
+  console.log(
+    `* You Have spend: ${TimerConfig.totalFocusTime} Min in Total Focus.`
+  );
+  console.log(
+    `* You Have spend: ${TimerConfig.totalBreakTime} Min in Total on Breaks.`
+  );
+  console.log(
+    "*************************************************************************"
+  );
 
   // Capture the user's input
   rl.question("\nChoose an option: ", (choice) => {
